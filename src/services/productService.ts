@@ -7,11 +7,11 @@ import { ServiceResponse } from '../types/ServiceResponse';
 function validateParams({
   name,
   price,
-  orderId,
 }: ProductInputtableTypes): string | null {
-  if (!name) return 'Name is required';
-  if (!price) return 'Price is required';
-  if (!orderId) return 'userId is required';
+  if (!name) return '"name" is required';
+  if (name.length < 3) return '"name" length must be at least 3 characters long';
+  if (!price) return '"price" is required';
+  if (price.length < 3) return '"price" length must be at least 3 characters long';
   
   return null;
 }
