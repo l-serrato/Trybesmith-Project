@@ -1,4 +1,4 @@
-import { Sequelize } from 'sequelize';
+/* import { Sequelize } from 'sequelize';
 import ProductModel from '../database/models/product.model';
 import OrderModel, {
   OrderSequelizeModel } from '../database/models/order.model';
@@ -21,7 +21,7 @@ async function list(): Promise<ServiceResponse<OrderSequelizeModel[]>> {
   return { status: 'SUCCESSFUL', data: orders };
 }
 
-/* async function create(
+async function create(
   order: OrderInputtableTypes,
 ): Promise<ServiceResponse<Order>> {
   let responseService: ServiceResponse<Order>;
@@ -38,8 +38,8 @@ async function list(): Promise<ServiceResponse<OrderSequelizeModel[]>> {
   responseService = { status: 'SUCCESSFUL', data: newOrder.dataValues };
 
   return responseService;
-} */
+}
 
 export default {
-  /* create,  */list,
-};
+  create, list,
+}; */
