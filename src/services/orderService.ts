@@ -21,25 +21,6 @@ async function list(): Promise<ServiceResponse<OrderSequelizeModel[]>> {
   return { status: 'SUCCESSFUL', data: orders };
 }
 
-/* async function create(
-  order: OrderInputtableTypes,
-): Promise<ServiceResponse<Order>> {
-  let responseService: ServiceResponse<Order>;
-
-  const error = validateParams(order);
-
-  if (error) {
-    responseService = { status: 'INVALID_DATA', data: { message: error } };
-    return responseService;
-  }
-
-  const newOrder = await OrderModel.create(order);
-
-  responseService = { status: 'SUCCESSFUL', data: newOrder.dataValues };
-
-  return responseService;
-} */
-
 export default {
-/*   create,  */list,
+  list,
 };
