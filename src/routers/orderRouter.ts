@@ -1,4 +1,4 @@
-/* import { Router } from 'express';
+import { Router } from 'express';
 import orderController from '../controllers/orderController';
 
 const orderRouter = Router();
@@ -6,4 +6,4 @@ const orderRouter = Router();
 orderRouter.get('/orders', orderController.list);
 // orderRouter.post('/orders', orderController.create);
 
-export default orderRouter; */
+export default orderRouter;
